@@ -16,17 +16,17 @@ class Counter extends Component {
     Decrement = (e) => {
         if (this.state.count ===0) {
             alert("Count can't be less than zero")
-        } else {
-            this.setState({count: this.state.count-1});
-        }
+        } 
+        this.setState({count: this.state.count-1});
+        
     }
 
     render () {
         return (
             <div className = "countercomponent">
                 <p> The count is {this.state.count}</p>
-                <button onClick = {this.Increment}> Increment </button>
-                <button onClick = {this.Decrement}> Decrement </button>
+                <button onClick = {this.Increment}>Increment</button>
+                <button onClick = {this.Decrement}>Decrement</button>
             </div>
         );
     };   

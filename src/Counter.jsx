@@ -16,9 +16,9 @@ class Counter extends Component {
     Decrement = (e) => {
         if (this.state.count ===0) {
             alert("Count can't be less than zero")
-        } 
-        this.setState({count: this.state.count-1});
-        
+        } else {
+            this.setState({count: this.state.count-1});
+        }       
     }
 
     render () {
